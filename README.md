@@ -1,4 +1,4 @@
-# tmux-mpv-info
+# tmux-weather-info-yr
 Displays the current temperature and weather based on your current location. The weather data is provided by the Norwegian Meteorological Institute.
 ![](https://feqzz.no/img/tmux-weather-info-yr.png)
 
