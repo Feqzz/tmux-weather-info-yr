@@ -27,7 +27,7 @@ case $SYMBOL in
 	heavysleetshowers*|heavyrainshowers*|lightrainshowers*|rainshowers*|sleetshowers*)
 		SYMBOL="🌦️"
 		;;
-	partlyclody*)
+	partlycloudy*)
 		SYMBOL="🌥️"
 		;;
 	heavysleetandthunder|heavyrainandthunder|heavyrainshowersandthunder*|heavysleetshowersandthunder*|lightrainshowersandthunder*|rainshowersandthunder*)
