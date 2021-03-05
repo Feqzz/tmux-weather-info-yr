@@ -4,7 +4,7 @@ Displays the current temperature and weather based on your location. The weather
 
 ## Installation
 Dependencies:
-* socat
+* curl
 * jq
 
 ### Installation with Tmux Plugin Manager
