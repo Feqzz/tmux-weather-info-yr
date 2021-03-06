@@ -2,7 +2,7 @@
 CACHE_OUTPUT=/tmp/weather-result-cache.txt
 AGE_TO_CACHE="600" #10 minutes
 
-if [ ! -f "$CACHE_OUTPUT" ] || [ $(($(date +%s) - $(stat --format=%Y "$CACHE_OUTPUT"))) -le "$AGE_TO_CACHE" ] 
+if [ -f "$CACHE_OUTPUT" ] && [ $(($(date +%s) - $(stat --format=%Y "$CACHE_OUTPUT"))) -le "$AGE_TO_CACHE" ] 
 then
 	cat "$CACHE_OUTPUT"
 	exit 0
