@@ -30,10 +30,19 @@ tmux source-file ~/.tmux.conf
 ```
 
 ## Usage
-Edit your `.tmux.conf` file and add `#{weather_info_yr}` to your `status-right`. Simple example:
+Edit your `.tmux.conf` file and add `#{weather_temperature}` to your `status-right`. Simple example:
 ``` tmux
-set -g status-right "#{weather_info_yr}"
+set -g status-right "#{weather_temperature}"
 ```
+
+## Available Options
+It is important that `#{weather_temperature}` is included in the status bar. Otherwise none of the other options will work. I might fix this in the future if there is any interest.
+| Command | Example |
+| --- | --- |
+| #{weather_temperature} | -1°C |
+| #{weather_city} | Kongsberg |
+| #{weather_symbol} | 🌤️ |
+| #{weather_symbol_plaintext} | fair_day |
 
 ## License
 [MIT](LICENSE.md)
